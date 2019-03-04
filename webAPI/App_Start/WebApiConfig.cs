@@ -11,9 +11,10 @@ namespace WebService
         public static void Register(HttpConfiguration config)
         {
             // CConfiguración de rutas y servicios de API
-
             config.MapHttpAttributeRoutes();
-            config.EnableCors();
+
+            var cors = new System.Web.Http.Cors.EnableCorsAttribute("www.example.com", "*", "*");
+            config.EnableCors(cors);
             config.MessageHandlers.Add(new TokenValidationHandler());
 
             config.Routes.MapHttpRoute(

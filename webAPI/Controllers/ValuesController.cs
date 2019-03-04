@@ -8,10 +8,12 @@ using System.Web.Http.Cors;
 
 namespace WebService.Controllers
 {
-    [EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
     public class ValuesController : ApiController
     {
-        // GET api/values
+        /// <summary>
+        /// Recolecta información de distintos sitios para encontrar todos los valores.
+        /// </summary>
+        /// <returns>GET api/values</returns>
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
