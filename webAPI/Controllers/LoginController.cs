@@ -10,6 +10,7 @@ using WebService.Models;
 using CryptSharp;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Web.Http.Cors;
 
 namespace WebService.Controllers
 {

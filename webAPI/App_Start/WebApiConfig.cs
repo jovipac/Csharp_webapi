@@ -13,8 +13,12 @@ namespace WebService
             // CConfiguración de rutas y servicios de API
             config.MapHttpAttributeRoutes();
 
-            var cors = new System.Web.Http.Cors.EnableCorsAttribute("www.example.com", "*", "*");
+            var cors = new System.Web.Http.Cors.EnableCorsAttribute(
+                "http://192.168.0.37:8100,http://localhost:8100",
+                "*",
+                "GET, POST, PATCH, PUT, DELETE, OPTIONS");
             config.EnableCors(cors);
+
             config.MessageHandlers.Add(new TokenValidationHandler());
 
             config.Routes.MapHttpRoute(

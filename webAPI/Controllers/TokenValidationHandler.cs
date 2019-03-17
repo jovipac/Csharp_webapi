@@ -34,6 +34,20 @@ namespace WebService.Controllers
             HttpStatusCode statusCode;
             string token;
 
+            //if (request.Headers.Contains("Origin") && request.Method.Method == "OPTIONS")
+            if (request.Method.Method == "OPTIONS")
+            {
+                var response = new HttpResponseMessage { StatusCode = HttpStatusCode.OK };
+                request.Headers.Add("Access-Control-Allow-Origin", "*");
+                //request.Headers.Add("Access-Control-Allow-Origin", "http://192.168.0.37:8100,http://localhost:8100");
+                request.Headers.Add("Access-Control-Allow-Headers", "Accepts, Content-Type, Origin, X-My-Header");
+                //request.Headers.Add("Access-Control-Allow-Headers", "*");
+                request.Headers.Add("Access-Control-Allow-Methods", "GET, POST");
+                request.Headers.Add("Access-Control-Max-Age", "60");
+
+                return base.SendAsync(request, cancellationToken);
+            }
+
             // determine whether a jwt exists or not
             if (!TryRetrieveToken(request, out token))
             {
