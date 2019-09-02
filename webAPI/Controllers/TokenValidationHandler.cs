@@ -39,11 +39,11 @@ namespace WebService.Controllers
             {
                 var response = new HttpResponseMessage { StatusCode = HttpStatusCode.OK };
                 request.Headers.Add("Access-Control-Allow-Origin", "*");
-                //request.Headers.Add("Access-Control-Allow-Origin", "http://192.168.0.37:8100,http://localhost:8100");
-                request.Headers.Add("Access-Control-Allow-Headers", "Accepts, Content-Type, Origin, X-My-Header");
-                //request.Headers.Add("Access-Control-Allow-Headers", "*");
+                request.Headers.Add("Access-Control-Allow-Headers", "Accepts, Content-Type, Origin, Authorization");
                 request.Headers.Add("Access-Control-Allow-Methods", "GET, POST");
                 request.Headers.Add("Access-Control-Max-Age", "60");
+                //var tsc = new TaskCompletionSource<HttpResponseMessage>();
+                //tsc.SetResult(response);
 
                 return base.SendAsync(request, cancellationToken);
             }

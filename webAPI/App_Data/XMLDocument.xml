@@ -508,5 +508,448 @@
             </summary>
             <returns>GET api/values</returns>
         </member>
+        <member name="T:WebService.Managers.CORSConfig">
+            <summary>
+            The CORSConfig Configuration Section.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.CORSConfig.CORSConfigSectionName">
+            <summary>
+            The XML name of the CORSConfig Configuration Section.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.CORSConfig.CORSConfigSectionPath">
+            <summary>
+            The XML path of the CORSConfig Configuration Section.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.CORSConfig.Instance">
+            <summary>
+            Gets the CORSConfig instance.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.CORSConfig.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.CORSConfig.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.CORSConfig.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="M:WebService.Managers.CORSConfig.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.CORSConfig.projectPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.CORSConfig.project"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.CORSConfig.project">
+            <summary>
+            Gets or sets the project.
+            </summary>
+        </member>
+        <member name="T:WebService.Managers.project_collection">
+            <summary>
+            A collection of token_element instances.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.project_collection.token_elementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:WebService.Managers.token_element"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.project_collection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:WebService.Managers.project_collection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="M:WebService.Managers.project_collection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:WebService.Managers.project_collection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:WebService.Managers.project_collection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:WebService.Managers.token_element"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:WebService.Managers.token_element"/>.
+            </returns>
+        </member>
+        <member name="P:WebService.Managers.project_collection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.token_element"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:WebService.Managers.token_element"/> to retrieve.</param>
+        </member>
+        <member name="P:WebService.Managers.project_collection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.token_element"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:WebService.Managers.token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.project_collection.Add(WebService.Managers.token_element)">
+            <summary>
+            Adds the specified <see cref="T:WebService.Managers.token_element"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="project">The <see cref="T:WebService.Managers.token_element"/> to add.</param>
+        </member>
+        <member name="M:WebService.Managers.project_collection.Remove(WebService.Managers.token_element)">
+            <summary>
+            Removes the specified <see cref="T:WebService.Managers.token_element"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="project">The <see cref="T:WebService.Managers.token_element"/> to remove.</param>
+        </member>
+        <member name="M:WebService.Managers.project_collection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.token_element"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:WebService.Managers.token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.project_collection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.token_element"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:WebService.Managers.token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.project_collection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.project_collection.idPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.project_collection.id"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.project_collection.id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="T:WebService.Managers.token_element">
+            <summary>
+            The token_element Configuration Element.
+            </summary>
+        </member>
+        <member name="M:WebService.Managers.token_element.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.token_element.namePropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.token_element.name"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.token_element.name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.token_element.secret_keyPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.token_element.secret_key"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.token_element.secret_key">
+            <summary>
+            Gets or sets the secret_key.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.token_element.expire_minutesPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.token_element.expire_minutes"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.token_element.expire_minutes">
+            <summary>
+            Gets or sets the expire_minutes.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.token_element.audience_tokenPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.token_element.audience_token"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.token_element.audience_token">
+            <summary>
+            Gets or sets the audience_token.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.token_element.issuer_tokenPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.token_element.issuer_token"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.token_element.issuer_token">
+            <summary>
+            Gets or sets the issuer_token.
+            </summary>
+        </member>
+        <member name="T:WebService.Managers.issuer_token_collection">
+            <summary>
+            A collection of issuer_token_element instances.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.issuer_token_collection.issuer_token_elementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:WebService.Managers.issuer_token_element"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.issuer_token_collection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:WebService.Managers.issuer_token_collection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:WebService.Managers.issuer_token_element"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:WebService.Managers.issuer_token_element"/>.
+            </returns>
+        </member>
+        <member name="P:WebService.Managers.issuer_token_collection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.issuer_token_element"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:WebService.Managers.issuer_token_element"/> to retrieve.</param>
+        </member>
+        <member name="P:WebService.Managers.issuer_token_collection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.issuer_token_element"/> with the specified key.
+            </summary>
+            <param name="key">The key of the <see cref="T:WebService.Managers.issuer_token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.Add(WebService.Managers.issuer_token_element)">
+            <summary>
+            Adds the specified <see cref="T:WebService.Managers.issuer_token_element"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="issuer_token">The <see cref="T:WebService.Managers.issuer_token_element"/> to add.</param>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.Remove(WebService.Managers.issuer_token_element)">
+            <summary>
+            Removes the specified <see cref="T:WebService.Managers.issuer_token_element"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="issuer_token">The <see cref="T:WebService.Managers.issuer_token_element"/> to remove.</param>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.issuer_token_element"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:WebService.Managers.issuer_token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.issuer_token_element"/> with the specified key.
+            </summary>
+            <param name="key">The key of the <see cref="T:WebService.Managers.issuer_token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_collection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="T:WebService.Managers.audience_token_collection">
+            <summary>
+            A collection of audience_token_element instances.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.audience_token_collection.audience_token_elementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:WebService.Managers.audience_token_element"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.audience_token_collection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:WebService.Managers.audience_token_collection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:WebService.Managers.audience_token_element"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:WebService.Managers.audience_token_element"/>.
+            </returns>
+        </member>
+        <member name="P:WebService.Managers.audience_token_collection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.audience_token_element"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:WebService.Managers.audience_token_element"/> to retrieve.</param>
+        </member>
+        <member name="P:WebService.Managers.audience_token_collection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.audience_token_element"/> with the specified key.
+            </summary>
+            <param name="key">The key of the <see cref="T:WebService.Managers.audience_token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.Add(WebService.Managers.audience_token_element)">
+            <summary>
+            Adds the specified <see cref="T:WebService.Managers.audience_token_element"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="audience_token">The <see cref="T:WebService.Managers.audience_token_element"/> to add.</param>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.Remove(WebService.Managers.audience_token_element)">
+            <summary>
+            Removes the specified <see cref="T:WebService.Managers.audience_token_element"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="audience_token">The <see cref="T:WebService.Managers.audience_token_element"/> to remove.</param>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.audience_token_element"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:WebService.Managers.audience_token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:WebService.Managers.audience_token_element"/> with the specified key.
+            </summary>
+            <param name="key">The key of the <see cref="T:WebService.Managers.audience_token_element"/> to retrieve.</param>
+        </member>
+        <member name="M:WebService.Managers.audience_token_collection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="T:WebService.Managers.issuer_token_element">
+            <summary>
+            The issuer_token_element Configuration Element.
+            </summary>
+        </member>
+        <member name="M:WebService.Managers.issuer_token_element.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.issuer_token_element.keyPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.issuer_token_element.key"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.issuer_token_element.key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.issuer_token_element.valuePropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.issuer_token_element.value"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.issuer_token_element.value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="T:WebService.Managers.audience_token_element">
+            <summary>
+            The audience_token_element Configuration Element.
+            </summary>
+        </member>
+        <member name="M:WebService.Managers.audience_token_element.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.audience_token_element.keyPropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.audience_token_element.key"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.audience_token_element.key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+        </member>
+        <member name="F:WebService.Managers.audience_token_element.valuePropertyName">
+            <summary>
+            The XML name of the <see cref="P:WebService.Managers.audience_token_element.value"/> property.
+            </summary>
+        </member>
+        <member name="P:WebService.Managers.audience_token_element.value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
     </members>
 </doc>
